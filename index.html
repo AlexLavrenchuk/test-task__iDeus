@@ -4,17 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- jquery-ui -->
+    <link rel="stylesheet" href="css/components/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/components/jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/components/jquery-ui/jquery-ui.theme.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/components/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/components/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/components/bootstrap/bootstrap-reboot.min.css">
+    <!-- custom -->
     <link rel="stylesheet" href="css/main.css">
     <title>Test task</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div class="wrapper">
+        <div class="hero">
 
+            <header class="header">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav nav">
+                    <a href="#" class="nav__link">about</a>
+                    <a href="#" class="nav__link">faq</a>
+                    <a href="#" class="nav__link">blog</a>
+                    <a href="#" class="nav__link">support</a>
+                    <button class="nav__button">min bokning <span class="nav__button_notification">1</span></button>
+                </nav>
+            </header><!-- end header -->
 
+            <main class="main">
+                <h1 class="main__title">Lorem ipsum dolor</h1>
+                <h4 class="main__subtitle">Fine and book canference rooms, workspace and pop-up offices</h4>
+                
+                <form class="form">
+                    <div class="form-row">
+                        <div class="form__group col">
+                            <input class="form-control form-control-lg basicAutoComplete form__group_location" type="text" autocomplete="off" placeholder="Location">
+                            <i class="fas fa-map-marker-alt form__group_icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <input class="form-control form-control-lg form__group_date" type="text" id="datepicker">
+                            <i class="far fa-calendar-alt form__group_icon"></i>
+                            <i class="fas fa-sort-down form__group_arrow"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="checkbox col">
+                            <i class="fas fa-user-friends checkbox__icon"></i>
+                            <div class="form-check form-check-inline checkbox__group">
+                                <input class="form-check-input checkbox__group_input" type="checkbox" id="xs" value="xs">
+                                <label class="form-check-label checkbox__group_label" for="xs">XS<span class="checkbox__group_span">2-4 personer</span></label>
+                            </div>
+                            <div class="form-check form-check-inline checkbox__group">
+                                <input class="form-check-input checkbox__group_input" type="checkbox" id="s" value="s">
+                                <label class="form-check-label checkbox__group_label" for="s">S<span class="checkbox__group_span">5-8 personer</span></label>
+                            </div>
+                            <div class="form-check form-check-inline checkbox__group">
+                                <input class="form-check-input checkbox__group_input" type="checkbox" id="l" value="l">
+                                <label class="form-check-label checkbox__group_label" for="l">L<span class="checkbox__group_span">13-20 personer</span></label>
+                            </div>
+                            <div class="form-check form-check-inline checkbox__group">
+                                <input class="form-check-input checkbox__group_input" type="checkbox" id="m" value="m">
+                                <label class="form-check-label checkbox__group_label" for="m">M<span class="checkbox__group_span">9-12 personer</span></label>
+                            </div>
+                            <div class="form-check form-check-inline checkbox__group">
+                                <input class="form-check-input checkbox__group_input" type="checkbox" id="all" value="all">
+                                <label class="form-check-label checkbox__group_label" for="all">Alla</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__button"><i class="fas fa-search form__button_icon"></i>SÖK</button>
+                    </div>
+                </form>
 
-
-
+                <h6 class="main__contact">For bigger quotes <a href="#" class="main__contact_link">contact us</a></h6>
+                <button class="main__button">how it works</button>
+            </main><!-- end main -->            
+        </div><!-- end hero -->
+    </div><!-- end wrapper -->
+     
     <script src="js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.1.0/dist/latest/bootstrap-autocomplete.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>

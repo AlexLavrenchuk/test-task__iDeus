@@ -1,3 +1,56 @@
-h1 {
-    color: red;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: auto;
+    padding: 20px;
+    max-width: 1105px;
+    color: $white;
+}
+.nav {
+    font-size: 13px;
+    text-transform: uppercase;
+    &__link {
+        margin: auto;
+        margin-right: 38px;
+        transition: .3s;
+        &:hover {
+            color: $gray;
+            text-decoration: underline;
+        }
+        &:active {
+            color: $blue;
+        }
+    }
+    &__button {
+        padding: 10px 10px 10px 20px;
+        background-color: $liteGreen;
+        color: $white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 25px;
+        transition: .3s;
+        &:focus {
+            @include outline($outlineColor);
+        }
+        &:hover {
+            background-color: $liteGreenHover;
+        }
+        &:active {
+            transform: translateY(2px);
+            background-color: $liteGreenActive;
+        }
+        &_notification {
+            display: inline-block;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 11px;
+            background-color: $liteRed;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+    }
 }
